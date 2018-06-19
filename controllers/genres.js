@@ -3,7 +3,7 @@ const router = express.Router();
 
 const Genre = require("../models/genre");
 
-router.get("/api/genres/", (req, res) => {
+router.get("/", (req, res) => {
     Genre.getGenres((err, genres) => {
         if(err){
             throw err;

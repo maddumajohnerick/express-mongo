@@ -9,7 +9,7 @@ const books = require("./controllers/books");
 //Connect to mongoose
 mongoose.connect("mongodb://localhost/bookstore");
 
-const db = mongoose.connection;
+//const db = mongoose.connection;
 
 app.use(bodyParser.json());
 
